@@ -6,14 +6,14 @@ print('\nNOTA! \nEste programa é uma simulação de pesagem ou seja, quando te 
 
 #------------------------------------ REGRA ------------------------------------
 
-eEnt1 = float(input('testar peso da 1º moeda: '))
+PesoPrimeiraMoeda = float(input('testar peso da 1º moeda: '))
 
-eEnt2 = float(input('testar peso das 4 primeiras moedas: '))
+PesoQuatroPrimeirasMoedas = float(input('testar peso das 4 primeiras moedas: '))
 
-if eEnt2/4 == eEnt1:
-	print(f'A ultima é falsa, pois a primeira tem o valor de {eEnt1}. Pesando a primeira com as proximas três e dividindo o valor por 4, da exatamente o valor de {eEnt1}, sendo assim, todas as 4 são verdadeiras, sendo a ultima a falsa, pois obviamente vai ter o valor diferente das demais.')
+if PesoQuatroPrimeirasMoedas/4 == PesoPrimeiraMoeda:
+	print(f'A ultima é falsa, pois a primeira tem o valor de {PesoPrimeiraMoeda}. Pesando a primeira com as proximas três e dividindo o valor por 4, da exatamente o valor de {PesoPrimeiraMoeda}, sendo assim, todas as 4 são verdadeiras, sendo a ultima a falsa, pois obviamente vai ter o valor diferente das demais.')
 
-elif eEnt2/4 > eEnt1:
+elif PesoQuatroPrimeirasMoedas/4 > PesoPrimeiraMoeda:
 	print('A primeira é falsa, pois ao juntar ela com as proximas 3 e pesar, se dividirmos o valor por 4, da um valor unitario para cada uma maior do que o valor original da primeira, como sabemos que a falsa pesa menos do que as originais, basta comparar o valor da media das 4 com o valor unitario da primeira.')
 
 else:
